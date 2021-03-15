@@ -7,7 +7,7 @@ const exerciseSchema = new Schema({
     type: String,
     required: true,
   },
-  description: {
+  activityName: {
     type: String,
     required: true,
   },
@@ -18,6 +18,14 @@ const exerciseSchema = new Schema({
   date: {
     type: Date,
     required: true,
+  },
+  activeCalories: {
+    type: Number,
+    required: false,
+  },
+  totalCalories: {
+    type: Number,
+    required: false,
   },
 }, {
   timestamps: true,
