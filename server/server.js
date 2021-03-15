@@ -21,9 +21,11 @@ connection.once( 'open', () => {
 // set up routes
 const exercisesRouter = require('./routes/exercises');
 const usersRouter = require('./routes/users')
+const activitiesRouter = require('./routes/activities')
 
 app.use('/exercises', exercisesRouter);
 app.use('/users', usersRouter);
+app.use('/activities', activitiesRouter);
 
 // start server
 app.listen(port, () => {
